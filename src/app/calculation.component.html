@@ -1,0 +1,45 @@
+<div class="slip_calculation">
+      <div class="input_slope">
+        <div class="input_inner">
+          <div><h2>値の入力</h2></div>
+          <div><button (click)="calc()" type="submit" >計算開始</button></div>
+        </div>
+        <div class="inner_forms">
+          <div class="long_cell">
+            <span><span class="spDisplay">斜面の</span>水平長さ</span>
+              <input type="number" name="last-name" [(ngModel)]="L" (change)="chengeData()" min="1" max="999" pattern="^[1-9][0-9]*$" required>m
+          </div>
+          <div class="long_cell">
+            <span><span class="spDisplay">斜面の</span>高さ</span>
+              <input type="number" name="last-name1" [(ngModel)]="H" (change)="chengeData()" min="1" max="999" pattern="^[1-9][0-9]*$"  required>m
+          </div>
+          <div class="long_cell">
+            <span><span class="spDisplay">土の</span>粘着力</span>
+              <input type="number" name="last-name2" [(ngModel)]="c" min="1" pattern="^[1-9][0-9]*$"  max="999" required >kN/m<sup>2</sup>
+          </div>
+          <div class="long_cell">
+            <span><span class="spDisplay">土の</span>摩擦角</span>
+              <input type="number" name="last-name3" [(ngModel)]="fi" min="1" pattern="^[1-9][0-9]*$" max="999" required>°
+          </div>
+          <div class="long_cell">
+            <span><span class="spDisplay">土の</span>単位体積重量</span>
+              <input type="number" name="last-name4" [(ngModel)]="rt" min="1" pattern="^[1-9][0-9]*$" max="999" required>kN/m<sup>3</sup>
+          </div>  
+        </div>
+        <div class="result_forms" id="result">
+          <div class="result_cell">
+            円弧の中心座標=({{x}},{{y}})
+          </div>
+          <div class="result_cell">
+            安全率：F＝{{F}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calculation">
+      <div class="body-container"  id="body-container-id">
+        <div class="three-container">
+          <app-three></app-three>
+        </div>
+      </div>  
+    </div> 
