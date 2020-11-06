@@ -24,6 +24,7 @@ export class calculation implements OnInit {
   public rt: number; // 土の単位体積重量
   public x:number;//円弧の中心座標
   public y:number;//円弧の中心座標
+  public R:number;//円弧の半径
   public F:number;//安全率
   public myElement = document.getElementById('result');
 
@@ -91,6 +92,7 @@ export class calculation implements OnInit {
           const y = response['y'];
           this.x = response['x'];
           this.y= response['y'];
+          this.R = response['R'];
           this.F= response['F'];
 
           alert('安全率 F=' + F.toString() +
