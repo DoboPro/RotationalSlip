@@ -13,8 +13,12 @@
         display: block;
         font-size: 16px;
         font-weight: lighter;
-        color: #fffafa;
+        color: #fff;
         border-bottom: 3px double;
+        a{
+            text-decoration:none;
+            color:#fff;
+        }
     }
 }
 
