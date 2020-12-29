@@ -78,7 +78,7 @@ export class calculation implements OnInit {
 
 
     this.http.post(
-      'https://asia-northeast1-the-structural-engine.cloudfunctions.net/function-2',
+      'https://asia-northeast1-team-dobopro.cloudfunctions.net/RotationalSlip',
       js,
       httpOptions
     ).toPromise()
