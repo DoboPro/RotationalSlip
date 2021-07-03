@@ -13,5 +13,12 @@
     {
       "path": "./tsconfig.spec.json"
     }
-]
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "experimentalDecorators": true,
+  },
+  "include": [
+    "components/providers/data-helper.module.ts",
+  ],
 }

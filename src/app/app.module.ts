@@ -10,20 +10,30 @@ import { ThreeComponent } from './components/three/three.component';
 
 import { explain } from './explanation.component';
 import { calculation } from './calculation.component';
+import { InputNodeComponent } from './components/input/input-node/input-node.component';
+import { SolidParamComponent } from './components/input/solid-param/solid-param.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { WaitDialogComponent } from './components/wait-dialog/wait-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ThreeComponent,
     explain,
-    calculation
+    calculation,
+    InputNodeComponent,
+    SolidParamComponent,
+    MenuComponent,
+    WaitDialogComponent,
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
